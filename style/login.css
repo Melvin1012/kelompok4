@@ -1,0 +1,232 @@
+:root {
+    --chocolate: #903E1F;
+    --croissant: #E07425;
+    --nice-golden: #FFC129;
+    --sourdough: #FFF38E;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --text-gray: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fff9f2;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    background-color: var(--white);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(144, 62, 31, 0.1);
+}
+
+.left.section {
+    background-color: var(--nice-golden);
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo.card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.logo {
+    color: var(--chocolate);
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+}
+
+.left.section h1 {
+    color: var(--chocolate);
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.highlight-text {
+    color: var(--croissant);
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.description {
+    color: var(--text-gray);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.login-area p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--chocolate);
+}
+
+.right.section {
+    flex: 1.2;
+    padding: 60px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right.section h2 {
+    color: var(--chocolate);
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: var(--text-gray);
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background-color: #fafafa;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--croissant);
+    background-color: var(--white);
+}
+
+.register {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.register a {
+    color: var(--croissant);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    width: 100%;
+    background-color: var(--croissant);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.left .btn-login {
+    width: auto;
+    padding: 10px 35px;
+    border: 2px solid var(--croissant);
+    background: transparent;
+    color: var(--croissant);
+}
+
+.left .btn-login:hover {
+    background: var(--croissant);
+    color: white;
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.divider span {
+    padding: 0 15px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.btn-social:hover {
+    background-color: #fcfcfc;
+    border-color: #ddd;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .left.section, .right.section {
+        padding: 40px 20px;
+    }
+}
