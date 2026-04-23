@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffea8e;
+    display: flex;
+}
+
+.dashboard {
+    background-color: bisque;
+    height: 1000px;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.dashboard h2{
+    text-align: center;
+}
+.dashboard ul,
+.dashboard li{   
+    list-style: none;
+    text-decoration: none;
+}
+
+.dashboard a {
+    color: black;
+    text-decoration: none;
+}
+
+.head img {
+    width: 150px;
+    padding-left: 20px;
+}
+
+button {
+    width: 175px;
+    height: 25px;
+    position: absolute;
+    top: 700px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+}
+
+.body {
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body h3{
+    text-align: center;
+}
+.body table {
+    border: solid black 0.2px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: bisque;
+}
+
