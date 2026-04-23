@@ -1,0 +1,66 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+background: #E07425;
+color: white;
+}
+
+.logo img {
+width: 40px;
+height: auto;
+}
+
+.nav-menu {
+display: flex;
+gap: 15px;
+}
+
+.nav-menu a {
+text-decoration: none;
+color: white;
+border: 1px solid rgba(255,255,255,0.5);
+padding: 5px 12px;
+border-radius: 20px;
+font-size: 12px;
+}
+
+.hero {
+background: #FFF38E;
+color: white;
+text-align: center;
+padding: 80px 20px 40px;
+}
+
+.hero h1 {
+font-size: 50px;
+margin: 0;
+color: #903E1F;
+}
+
+.hero p {
+font-size: 14px;
+opacity: 0.8;
+margin-top: 10px;
+color: #903E1F;
+}
+
+.croissant-container {
+display: flex;
+justify-content: center;
+margin-top: 40px;
+flex-wrap: wrap;
+}
+
+.croissant-container img {
+width: 300px;
+margin: 10px;
+border-radius: 10px;
+}
+    
