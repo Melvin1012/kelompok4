@@ -158,6 +158,11 @@ body {
     transition: 0.3s;
 }
 
+.btn-login  a{
+    color: --croissant;
+    text-decoration: o;
+}
+
 .left .btn-login {
     width: auto;
     padding: 10px 35px;

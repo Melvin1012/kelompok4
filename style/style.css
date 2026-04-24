@@ -42,7 +42,10 @@ button {
 }
 
 .body {
-    margin-left: 350px;
+    width: 10000px;
+    margin: 25px;
+    align-items: center;
+    background-color: bisque;
     display: flex;
     flex-direction: column;
 }
